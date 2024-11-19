@@ -1,0 +1,115 @@
+.square1{
+    background-color: blue;
+    width: 10vh;
+    height: 10vh;
+}
+.square2{
+    background-color: yellow;
+    width: 10vh;
+    height: 10vh;
+}
+
+/* carrusel */
+
+.carousel {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transform: rotateX(-20deg) translateY(-70px);
+    transform-style: preserve-3d;
+    perspective: 800px;
+    user-select: none;
+    cursor: grab;
+  }
+  
+  .carousel-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -100px 0 0 -100px;
+    width: 200px;
+    height: 200px;
+    transform: translate3d(0, 0, -10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    transform-origin: 50% 50%;
+  }
+  
+  @media (max-width: 600px) {
+    .carousel {
+      transform: rotateX(-10deg) scale(.6) translateY(-60px);
+    }
+  }
+
+  /* green box */
+  .box {
+    width: 10vh;
+    height: 10vh;
+    display: block;
+    background-color: green;
+  }
+  .box1 {
+    width: 10vh;
+    height: 10vh;
+    display: block;
+    background-color: green;
+  }
+
+  /* btn sin hover */
+  .btnTxtNegro{
+    padding-left: 6vh;
+    padding-right: 6vh;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    color: var(--myColor);
+    border: 2px solid var(--myColor);
+    border-radius: 2vh;
+    background-color: white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    margin: 5vh;
+    cursor: pointer;
+  }
+/* boton con hover */
+.wrapper{
+  margin: 5vh;
+  /*border: 2px solid black;
+  border-radius: 3em;*/
+  width: 20vw;
+  height: 3vh;
+  display: grid;
+  padding: 0.5vh 1vh;
+  place-items: center;
+  cursor: pointer;
+}
+.link{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  color: black;
+  text-decoration: none;
+  position: relative;
+}
+span, i {
+  position: relative;
+}
+
+i {
+  margin-left: 0.5em;
+}
+
+.pink {
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  background-color: pink;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -1em; /* added -1em to make sure the pink div is inside the link */
+}
