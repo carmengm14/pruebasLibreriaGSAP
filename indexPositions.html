@@ -3,72 +3,62 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      height: 200vh;
-      margin: 0;
-      font-family: Arial, sans-serif;
-    }
+  <title>Example Positioning</title>
+    <style>
+        * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-    .static {
-      position: static;
-      background-color: lightgray;
-      padding: 20px;
-      border: 1px solid black;
-    }
+body {
+  font-family: Arial, sans-serif;
+}
 
-    .relative {
-      position: relative;
-      top: 20px; /* se desplaza hacia arriba en relación con su posición original */
-      left: 20px; /* se desplaza hacia la derecha en relación con su posición original */
-      background-color: lightgray;
-      padding: 20px;
-      border: 1px solid black;
-    }
+.example {
+  background-color: lightgray;
+  padding: 20px;
+  border: 1px solid black;
+  margin-bottom: 20px;
+}
 
-    .absolute {
-      position: absolute;
-      top: 50px; /* se posiciona en relación con el ancestro no estático más cercano */
-      left: 50px;
-      background-color: lightgray;
-      padding: 20px;
-      border: 1px solid black;
-    }
+.relative {
+  position: relative;
+  top: 20px;
+  left: 20px;
+}
 
-    .fixed {
-      position: fixed;
-      top: 0; /* se posiciona en relación con la ventana del navegador */
-      left: 0;
-      background-color: lightgray;
-      padding: 20px;
-      border: 1px solid black;
-    }
+.absolute {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
 
-    .sticky {
-      position: sticky;
-      top: 0; /* se comporta como relative hasta que el usuario hace scroll hacia él */
-      background-color: lightgray;
-      padding: 20px;
-      border: 1px solid black;
-    }
-  </style>
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+}
+    </style>
 </head>
 <body>
 
-<h2>Static</h2>
-<p class="static">Este párrafo tiene la posición predeterminada.</p>
+<header>
+  <h1>Positioning Examples</h1>
+</header>
 
-<h2>Relative</h2>
-<p class="relative">Este párrafo se desplaza hacia arriba y hacia la derecha en relación con su posición original.</p>
-
-<h2>Absolute</h2>
-<p class="absolute">Este párrafo se posiciona en relación con el ancestro no estático más cercano.</p>
-
-<h2>Fixed</h2>
-<p class="fixed">Este párrafo se posiciona en relación con la ventana del navegador y se queda fijo en la misma posición incluso si el usuario hace scroll hacia arriba o hacia abajo.</p>
-
-<h2>Sticky</h2>
-<p class="sticky">Este párrafo se comporta como relative hasta que el usuario hace scroll hacia él, en ese momento se convierte en fixed.</p>
+<main>
+  <section class="example static">Static Positioning Example</section>
+  <section class="example relative">Relative Positioning Example</section>
+  <section class="example absolute">Absolute Positioning Example</section>
+  <section class="example fixed">Fixed Positioning Example</section>
+  <section class="example sticky">Sticky Positioning Example</section>
+</main>
 
 </body>
 </html>

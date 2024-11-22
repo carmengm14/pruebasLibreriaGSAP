@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .contenedorGrid {
+            display: grid;
+            grid-template-columns: repeat(4, 5vh);
+            grid-template-rows: repeat(2, 5vh);
+            gap: 20px;
+            justify-content: center;
+        }
+      
+        .contenedorFlex {
+            display: flex;
+            justify-content: right;
+            gap: 5vh;
+            background-color: blue;
+            color: white;
+            padding: 2vh 10vh;
+        }
+        .contenedorFlex > img{
+           align-self: flex-end;
+           margin-left: -5vh;
+        }
+        .contenedorFlex > div{
+           background-color: brown;
+           padding: 1vh 2vh;
+           margin: 0vh -2.3vh;
+           align-self: center;
+        }
+       
+    </style>
+</head>
+<body>
+    <p><strong>DISPLAY: GRID</strong></p>
+    <div class="contenedorGrid">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+    </div>
+    <br>
+    <p><strong>DISPLAY: FLEX</strong></p>
+    <div class="contenedorFlex">
+        <img src="./network (1).png" alt="" style="width: 5vh;"/>
+        <div class="item">Inicio</div>
+        <div class="item">Sobre nosotros</div>
+        <div class="item">Servicios</div>
+        <div class="item">Contacto</div>
+    </div>
+</body>
+</html>
